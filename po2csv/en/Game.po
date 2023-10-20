@@ -1,0 +1,28 @@
+﻿# Game English translation.
+# Copyright Epic Games, Inc. All Rights Reserved.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Game\n"
+"POT-Creation-Date: 2023-10-20 12:07\n"
+"PO-Revision-Date: 2023-10-20 12:07\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Key:	000C80B4CB44B308E311539C0AD9FC51
+#. SourceLocation:	/Gunslinger_Client/Test-UCS/IOS-Tracking/GSLC-Test-230912-IOS-Tracking-02-1-NotDetermined.GSLC-Test-230912-IOS-Tracking-02-Request_C:WidgetTree.TextBlock_202.Text
+#: /Gunslinger_Client/Test-UCS/IOS-Tracking/GSLC-Test-230912-IOS-Tracking-02-1-NotDetermined.GSLC-Test-230912-IOS-Tracking-02-Request_C:WidgetTree.TextBlock_202.Text
+msgctxt ",000C80B4CB44B308E311539C0AD9FC51"
+msgid "YES"
+msgstr "YES"
+
+#. Key:	001C9D1768644990958BA145A5CFC552
+#. SourceLocation:	/Game/GunSlinger/Core/Loader/WBP_LoaderScreenGPAD.Default__WBP_LoaderScreenGPAD_C.DownloadTexts(42).DownloadTexts
+#: /Game/GunSlinger/Core/Loader/WBP_LoaderScreenGPAD.Default__WBP_LoaderScreenGPAD_C.DownloadTexts(42).DownloadTexts
+msgctxt ",001C9D1768644990958BA145A5CFC552"
+msgid "Let's play"
+msgstr " Let's play "

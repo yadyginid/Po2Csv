@@ -28,17 +28,18 @@ def merge_to_csv(po_files, csv_output_path):
         languages.add(lang)
 
         for entry in po_data:
-            if entry.msgid not in translations:
-                translations[entry.msgid] = {}
-            translations[entry.msgid][lang] = entry.msgstr
+            key = (entry.msgctxt, entry.msgid)
+            if key not in translations:
+                translations[key] = {}
+            translations[key][lang] = entry.msgstr
 
     with open(csv_output_path, 'w', newline='', encoding='utf-8') as csvfile:
-        fieldnames = ['msgid'] + list(languages)
+        fieldnames = ['msgctxt', 'msgid'] + list(languages)
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)  # Quote all fields
         writer.writeheader()
 
-        for msgid, langs in translations.items():
-            row = {'msgid': msgid}
+        for (msgctxt, msgid), langs in translations.items():
+            row = {'msgctxt': msgctxt, 'msgid': msgid}
             for lang in languages:
                 row[lang] = langs.get(lang, "")
             writer.writerow(row)
